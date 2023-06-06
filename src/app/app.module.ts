@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SharedModule } from './shared/shared.module';
-import { PagesModule } from './pages/pages.module';
+import { SharedModule } from './presentation/shared/shared.module';
+import { PagesModule } from './presentation/pages/pages.module';
 
 @NgModule({
   declarations: [AppComponent],
