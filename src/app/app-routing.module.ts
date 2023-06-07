@@ -5,7 +5,7 @@ export const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./presentation/pages/pages.module').then((m) => m.PagesModule),
+      import('./pages/pages.module').then((m) => m.PagesModule),
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

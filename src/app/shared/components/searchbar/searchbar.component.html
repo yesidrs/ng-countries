@@ -2,4 +2,6 @@
   type="text"
   [placeholder]="placeholder"
   class="border rounded border-light w-full p-2 focus:outline-green"
+  (keyup.enter)="emitValue(txtSearch.value)"
+  #txtSearch
 />
