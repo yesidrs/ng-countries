@@ -1,0 +1,25 @@
+<table class="table-fixed w-full mt-2">
+  <thead class="text-left">
+    <tr class="border-b">
+      <th class="w-10">#</th>
+      <th class="w-28">Bandera</th>
+      <th>Nombre</th>
+      <th>Capital</th>
+      <th>Población</th>
+    </tr>
+  </thead>
+  <tbody class="text-left font-thin">
+    <tr
+      *ngFor="let country of countries; let i = index"
+      class="border-b border-light"
+    >
+      <td>{{ i + 1 }}</td>
+      <td>
+        <img class="ml-5" [src]="country.flags.png" width="30" [alt]="country.name.common" />
+      </td>
+      <td>{{ country.name.common }}</td>
+      <td>{{ country.capital }}</td>
+      <td>{{ country.population | number }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,8 +1,11 @@
-<shared-searchbar
-  [placeholder]="'Search by capitals...'"
-  (onValue)="searchByCapital($event)"
-></shared-searchbar>
-
-<!-- <ul>
-  <li *ngFor="let country of countries">{{ country.region }}</li>
-</ul> -->
+<div class="flex flex-col items-center h-full">
+  <div class="w-1/2">
+    <shared-searchbar
+      [placeholder]="'Search by capitals...'"
+      (onValue)="searchByCapital($event)"
+    ></shared-searchbar>
+  </div>
+  <div class="w-11/12 h-full mt-5 overflow-auto">
+    <countries-table [countries]="countries"></countries-table>
+  </div>
+</div>
