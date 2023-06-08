@@ -9,6 +9,10 @@ export class SearchbarComponent {
   @Output() onValue: EventEmitter<string> = new EventEmitter();
 
   emitValue(value: string) {
+    value = value.trim();
+
+    if (!value) return;
+
     this.onValue.emit(value);
   }
 }
