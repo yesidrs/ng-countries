@@ -7,10 +7,10 @@ import { CountryDetailsPageComponent } from './country-details-page/country-deta
 import { RegionsPageComponent } from './regions-page/regions-page.component';
 
 export const routes: Routes = [
-  { path: 'countries', component: CountriesPageComponent },
-  { path: 'capitals', component: CapitalsPageComponent },
+  { path: 'by-name', component: CountriesPageComponent },
+  { path: 'by-capitals', component: CapitalsPageComponent },
   { path: 'country/id', component: CountryDetailsPageComponent },
-  { path: 'regions', component: RegionsPageComponent },
+  { path: 'by-regions', component: RegionsPageComponent },
 ];
 
 @NgModule({

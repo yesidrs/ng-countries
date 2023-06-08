@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styles: [],
 })
 export class SidebarComponent {
-  menuItems: string[] = ['capitals', 'countries', 'regions'];
+  menuItems: string[] = ['name', 'capitals', 'regions'];
 }

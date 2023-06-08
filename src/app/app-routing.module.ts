@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'countries',
     loadChildren: () =>
       import('./pages/pages.module').then((m) => m.PagesModule),
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: 'countries', pathMatch: 'full' },
 ];
 
 @NgModule({

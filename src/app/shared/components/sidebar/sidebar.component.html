@@ -4,7 +4,7 @@
   <ul class="mt-5 bg-white w-11/12 rounded">
     <li
       *ngFor="let item of menuItems"
-      [routerLink]="item"
+      [routerLink]="'/countries/by-' + item"
       routerLinkActive="bg-background-light"
       class="pl-5 py-3 m-0 cursor-pointer hover:bg-background-light rounded mb-1"
     >
